@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<f:view>
+    <h:graphicImage value="Pictures/#{beanKlasse.eyes}#{beanKlasse.skin}.png" style="width: 100px; height: 100px;"/>
+    <h:selectOneMenu id="selectOneMenu" value="#{beanKlasse.hair}">
+        <f:selectItems value="blond"/>
+        <f:selectItems value="schwarz"/>
+    </h:selectOneMenu>
+    <h:commandButton value = "Submit" action = "final" />
+</f:view>
+</html>
